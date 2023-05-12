@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"project01_controlled\startup_stm32f446xx.o"
+"project01_controlled\main.o"
+"project01_controlled\stm32f4xx_it.o"
+"project01_controlled\stm32f4xx_hal_msp.o"
+"project01_controlled\stm32f4xx_hal_tim.o"
+"project01_controlled\stm32f4xx_hal_tim_ex.o"
+"project01_controlled\stm32f4xx_hal_uart.o"
+"project01_controlled\stm32f4xx_hal_rcc.o"
+"project01_controlled\stm32f4xx_hal_rcc_ex.o"
+"project01_controlled\stm32f4xx_hal_flash.o"
+"project01_controlled\stm32f4xx_hal_flash_ex.o"
+"project01_controlled\stm32f4xx_hal_flash_ramfunc.o"
+"project01_controlled\stm32f4xx_hal_gpio.o"
+"project01_controlled\stm32f4xx_hal_dma_ex.o"
+"project01_controlled\stm32f4xx_hal_dma.o"
+"project01_controlled\stm32f4xx_hal_pwr.o"
+"project01_controlled\stm32f4xx_hal_pwr_ex.o"
+"project01_controlled\stm32f4xx_hal_cortex.o"
+"project01_controlled\stm32f4xx_hal.o"
+"project01_controlled\stm32f4xx_hal_exti.o"
+"project01_controlled\system_stm32f4xx.o"
+--strict --scatter "Project01_ControlLED\Project01_ControlLED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Project01_ControlLED.map" -o Project01_ControlLED\Project01_ControlLED.axf
